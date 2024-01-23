@@ -59,13 +59,13 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-selenide
-    testImplementation group: 'io.qameta.allure', name: 'allure-selenide', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-selenide', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons
-    testImplementation group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-junit5
-    testImplementation group: 'io.qameta.allure', name: 'allure-junit5', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-junit5', version: '2.12.1'
 
     // Add aspectjweaver dependency
     agent "org.aspectj:aspectjweaver:$aspectJVersion"
@@ -74,16 +74,16 @@ dependencies {
     testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-commandline
-    testImplementation group: 'io.qameta.allure', name: 'allure-commandline', version: '2.17.2', ext: 'pom'
+    testImplementation group: 'io.qameta.allure', name: 'allure-commandline', version: '2.12.1', ext: 'pom'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-assertj
-    testImplementation group: 'io.qameta.allure', name: 'allure-assertj', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-assertj', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-rest-assured
-    testImplementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-rest-assured', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-java-commons
-    testImplementation group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.17.2'
+    testImplementation group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
     testImplementation group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.5'
