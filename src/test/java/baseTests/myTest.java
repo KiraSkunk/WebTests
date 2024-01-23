@@ -1,6 +1,9 @@
 package baseTests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import hello.junit.EnvironmentType;
+import hello.junit.Functionality;
+import hello.junit.WebsiteFunctionality;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Step;
@@ -12,9 +15,11 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.screenshot;
+import static hello.junit.TestEnvironmentType.DEVELOPMENT;
+import static hello.junit.TestEnvironmentType.STAGING;
 import static io.qameta.allure.Allure.step;
 
-
+@Functionality(WebsiteFunctionality.NEW_TESTS)
 public class myTest {
 
     @BeforeEach
@@ -27,7 +32,7 @@ public class myTest {
     @Description("Авиа - Бронь и отмена - В одну сторону - 1Взр+1Реб+1Млд - С местами")
     @TmsLink("WITZAQ")
     @Owner("kirillova")
-//    @EnvironmentType({BILETIX})
+    @EnvironmentType({DEVELOPMENT})
     public void bookingWithPlacesTest() throws Exception {
         step("test");
         ope();
@@ -40,7 +45,7 @@ public class myTest {
     @Description("Авиа - Бронь и отмена - В одну сторону - 1Взр+1Реб+1Млд - С местами")
     @TmsLink("WITZAQ")
     @Owner("kirillova")
-//    @EnvironmentType({BILETIX})
+    @EnvironmentType({STAGING})
     public void bookingTest() throws Exception {
         step("test");
         ope();
@@ -50,7 +55,6 @@ public class myTest {
 
     @Step
     private void openURL(String url) {
-//        open("https://biletix.ru/");
         open(url);
         screenshot("AAAAA");
     }
