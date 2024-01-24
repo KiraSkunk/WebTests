@@ -24,7 +24,7 @@ public class myTest {
 
     @BeforeEach
     public void logging() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(false));
     }
 
     @Test
