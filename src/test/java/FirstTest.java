@@ -25,6 +25,7 @@ public class FirstTest extends BaseTest{
     @Description("Авиа - Бронь и отмена - В одну сторону - 1Взр+1Реб+1Млд - С местами")
     @TmsLink("WITZAQ")
     public void bookingTest() throws Exception {
+        System.out.println("тест запущен");
         Allure.step("test");
         ope();
         openURL("https://ya2.ru/");
@@ -34,6 +35,7 @@ public class FirstTest extends BaseTest{
     @Step("Ifu1")
     private void openURL(String url) {
         open(url);
+        System.out.println("Открыт URL");
         saveScreenshot("AAAAA");
         saveHTML();
         saveText("тест прошел?", "вроде да");

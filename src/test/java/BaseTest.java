@@ -19,7 +19,11 @@ import static com.codeborne.selenide.Selenide.$;
 
 abstract public class BaseTest {
 
-    public void setUp(){
+    public static void main(final String[] args) throws Exception {
+
+    }
+
+    public void setUp() {
 //        WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
 //        Configuration.browserVersion="121.0.6167.161";
@@ -32,7 +36,7 @@ abstract public class BaseTest {
     }
 
     @BeforeEach
-    public void init(){
+    public void init() {
         setUp();
     }
 
@@ -83,7 +87,7 @@ abstract public class BaseTest {
     }
 
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         Selenide.closeWebDriver();
     }
 }
